@@ -1,0 +1,223 @@
+*{ 
+    margin: 0; /*resetea los margenes por defecto que tienen los elementos html*/
+    padding: 0; /*resetea el padding (margen interno) de los elementos html*/
+}
+
+main{
+    width: 80%; /*ancho expresado en porcentaje*/
+    margin: auto; /*la propiedad margin con el valor auto, centra verticalmente*/
+   }
+
+body
+{
+	font-family: arial;
+	color: #3B3B3B;	
+}
+
+header
+{
+	background-color: #3B3B3B;
+	padding: 15px;
+    border-bottom: 5px #3B3B3B solid;
+    
+}
+
+.logoempresa
+{
+    width: 80px;
+    margin-left: 30px;
+}
+
+/*NAV */
+nav{
+    background-color: #636363;
+    margin-right: 0px;
+    margin-left: 0px;
+    width: 100%;
+    margin-bottom: 50px;
+}
+.menu ul{
+    display: flex;
+    justify-content: center;
+}
+.menu li{
+    list-style: none;
+    padding: 10px 0px;
+}
+.menu a{
+    color:#fff;
+    text-decoration: none;
+    padding: 10px;
+}
+.menu a:hover{
+    background-color: #fff;
+    color:#11588d;
+}
+/*NAV */
+
+
+
+h2
+{
+    text-align: center;
+    margin-bottom:50px;
+}
+
+footer
+{
+    background-color: #3B3B3B;
+    padding: 35px 75px 120px 75px;
+}
+
+.cajafooter
+{  
+    float:left;
+    width: 33.33%;
+   
+}
+
+.titulofooter
+{
+    color:white; 
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.contfooter
+{
+    color: white;
+    text-align: center;
+}
+
+
+/*Especiales para Index.html (Pagina inicio)*/
+
+.secmain
+{   
+}
+
+.cajainicio
+{
+    margin-top: 30px;
+    float:left;
+    width: 33.33%;
+}
+
+.enfermedades
+{
+    color: white;
+    background-color: #3B3B3B;
+    border-radius:10px;
+    padding: 10px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 140px;
+}
+
+.vacunas
+{
+    color: white;
+    background-color: #3B3B3B;
+    border-radius:10px;
+    padding: 10px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 30px;
+    width: 80px;    
+}
+
+.mapahospital
+{
+    color: white;
+    background-color: #3B3B3B;
+    border-radius:10px;
+    padding: 10px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 80px;
+}
+
+.icono1
+{
+
+    font-size: 50px;
+    padding-left: 80px;
+    margin-right: 20px;
+    margin-left: 80px;
+    margin-bottom: 10px;
+}
+
+.icono2
+{
+    font-size: 50px;
+    padding-left: 80px;
+    margin-right: 20px;
+    margin-left: 80px;
+    margin-bottom: 10px;
+    
+}
+
+.icono3
+{
+    font-size: 50px;;
+    padding-left: 80px;
+    margin-right: 20px;
+    margin-left: 80px;
+    margin-bottom: 10px;
+    
+}
+
+.sintomas
+{
+margin-bottom: 30px;
+}
+.sintomasimg
+{
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+/*Para mapa de mapa.html*/
+.mapamapa
+{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+
+/* Para enfermedades.html*/
+
+.cajaenfermedad
+{
+    margin-left: 200px;
+    margin-bottom: 30px;
+
+    
+}
+.cajaenfermedad2
+{
+    float:right;
+
+    margin-bottom: 30px;
+    width: 700px;
+}
+
+.imgenfermedadbox
+{
+    height: 120px;
+    width: 180px;
+}
+.desenfermedad
+{
+    text-align: left;
+}
+.verdetalle
+{
+    margin-top:10px;
+    color: white;
+    background-color: #636363;
+    border-radius: 10px;
+    margin-right: 500px;
+}
