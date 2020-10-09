@@ -192,16 +192,13 @@ margin-bottom: 30px;
 .cajaenfermedad
 {
     margin-left: 200px;
-    margin-bottom: 30px;
-
-    
+    margin-bottom: 30px;    
 }
 .cajaenfermedad2
 {
     float:right;
     padding-right: 20px;
     margin-bottom: 30px;
-
     width: 650px;
 }
 
@@ -222,4 +219,59 @@ margin-bottom: 30px;
     background-color: #636363;
     border-radius: 5px;
     margin-right: 500px;
+}
+    
+
+/* Para coronavirus.html */
+
+.covidimg
+{
+    height: 320px;
+    width: 500px;
+    border-radius: 10px;
+}
+
+.divimagen
+{
+width: 1100px;
+height: 320px;
+margin-bottom: 50px;
+}
+
+.divparrafocov
+{
+    float:right;
+    width: 400px;
+    padding-right: 140px;
+}
+
+.titleformcovid
+{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.boxform
+{
+    margin-top:10px;
+    width: 500px;
+    margin-bottom: 20px;
+}
+
+.leyendsint
+{
+    margin-bottom: 20px;
+}
+
+.divsintomas
+{
+    width: 500px;
+    height: 200px;
+    margin-bottom: 50px;
+}
+.sintomasimg2
+{
+    height:100px; 
+    width:180px;
+    float: left;
 }
