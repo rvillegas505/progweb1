@@ -65,6 +65,7 @@ h2
 
 footer
 {
+
     background-color: #3B3B3B;
     padding: 35px 75px 120px 75px;
 }
@@ -250,12 +251,26 @@ margin-bottom: 50px;
     text-align: center;
     margin-bottom: 30px;
 }
+.sectionsintform
+{
+height: 600px;
 
+}
 .boxform
 {
     margin-top:10px;
-    width: 500px;
+    width: 400px;
     margin-bottom: 20px;
+
+}
+.boxform2
+{
+    margin-top:10px;
+    width: 400px;
+    margin-bottom: 20px;
+    position: relative;
+    top: -440px; left: 550px; bottom:100px;
+    
 }
 
 .leyendsint
@@ -274,4 +289,44 @@ margin-bottom: 50px;
     height:100px; 
     width:180px;
     float: left;
+}
+
+.divprecaucion
+{
+    height: 500px;
+}
+
+.precaucionimg
+{
+    height:200px; 
+    width:25%;
+    float: left;
+}
+
+.hospitalespepadre
+{
+    height: 400px;
+}
+
+.hospitalespehijo
+{
+    width: 50%;
+    float: left;
+}
+
+.titledurand
+{
+    text-align: left;
+    margin-bottom:10px;
+}
+.textdurand
+{
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.imgdurand
+{
+    height: 150px;
+    width: 200px;
 }
