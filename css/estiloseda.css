@@ -21,6 +21,21 @@ header
     border-bottom: 5px #3B3B3B solid;
     
 }
+/* buscar y lupa */
+#buscador{
+    width: 600px;
+    height: 30px;
+    font-size: 15px;
+    margin-left: 280px;
+}
+.lupa-buscar{
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+    margin-top: 10px;
+    vertical-align: bottom;
+}
+/* fin buscar y lupa */
 
 .logoempresa
 {
@@ -104,6 +119,69 @@ footer
     float:left;
     width: 33.33%;
 }
+/* slider */
+.container{
+    margin:auto;
+    background-color: white;
+    width: 800px;
+    padding: 30px;
+}
+ul,li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  
+}
+ul.slider{
+    position: relative;
+    width: 800px;
+    height: 300px;
+}
+ul.slider li{
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  width: inherit;
+  height: inherit;
+  background-color: white;
+transition: opacity .5s;
+
+}
+ul.slider li img{
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+ul.slider li:first-child{
+  opacity: 1;
+
+}
+ul.slider li:target{
+  opacity: 1;
+}
+.menuslider{
+text-align: center;
+margin: 20px;
+}
+
+.menuslider li{
+display: inline-block;
+text-align: center;
+}
+
+.menuslider li a{
+display: inline-block;
+color: white;
+text-decoration: none;
+background-color: grey;
+padding: 10px;
+width: 20px;
+height: 20px;
+font-size: 20px;
+border-radius: 100%;
+}
+/* fin slider */
 
 .enfermedades
 {
@@ -329,4 +407,40 @@ height: 600px;
 {
     height: 150px;
     width: 200px;
+}
+
+
+/* Para contacto.html */
+
+.divcontactoformpadre
+{
+    height: 300px;
+}
+
+.h3contacto
+{
+    margin-bottom: 15px;
+}
+
+.pdatoscontacto
+{
+    margin-bottom: 5px;
+}
+
+.formcontacto
+{
+    width: 50%;
+    float:left;
+}
+
+.datoscontacto
+{
+    width: 50%;
+    float:left;
+}
+
+.mapacontactohtml
+{
+    margin-bottom: 20px;
+    text-align: center;
 }
