@@ -3,7 +3,7 @@
 	
 	<head>
 		<meta charset="utf-8">
-		<title>Empresa de salud </title>
+		<title>Empresa de salud - Contacto</title>
 		<link rel="STYLESHEET" type="text/css" href="css/estiloseda.css">
 		<script src="https://kit.fontawesome.com/e29b713b16.js" crossorigin="anonymous"></script>
 	</head>
@@ -11,7 +11,16 @@
 	<body>
 		<header>
 			<img class="logoempresa" src="img/logo-medicine.png">
-			<input type="search" id="buscador" placeholder="Buscar aqui">
+			
+             <datalist id="buscador" class="buscador">
+                <option value="Coronavirus"></option>
+                <option value="Gripe"></option>
+                <option value="Diabetes"></option>
+                <option value="Gastritis"></option>
+                <option value="Neumonia"></option>
+            </datalist>
+            <input list="buscador" name="enfermedades" type="text" class="buscador" placeholder="Buscar aqui">
+            
 			<a href=""><img class="lupa-buscar" src="img/lupa.png" alt="lupa"></a>
 		</header>
 
@@ -35,13 +44,13 @@
 	       	<h3 class="h3contacto">CONTACTO</h3>
 	       	<form action="http://www.google.com.ar" method="get">
 	        	<label>Nombre y Apellido</label><br/>
-	        	<input type="text" placeholder="Nombre y Apellido" size="20" maxlength="30" requiered /> <br/>
+	        	<input class= "contactoforminput" type="text" placeholder="Nombre y Apellido" size="20" maxlength="30" required /><br>
 	        	<label>Email</label><br/>
-	        	<input type="text" placeholder="Email" size="20" maxlength="30" requiered /> <br/>
+	        	<input class= "contactoforminput" type="text" placeholder="Email" size="20" maxlength="30" required /> <br/>
 	        	<label>Telefono</label><br/>
-	        	<input type="number" placeholder="Telefono" size="20" maxlength="30" /> <br/>
+	        	<input class= "contactoforminput" type="number" placeholder="Telefono" size="20" maxlength="30" /> <br/>
 	        	<label>Consulta</label><br/>
-	        	<input type="text" placeholder="Escriba su consulta" size="50" maxlength="300" requiered /> <br/>
+	        	<textarea class="consultaform" placeholder="Escriba su consulta" required></textarea>
 	        	<input type="submit" value="Enviar" />
 
 	        </form>
@@ -51,9 +60,9 @@
 
 	       	<div class="datoscontacto">
 	       	<h3 class="h3contacto">DATOS DE CONTACTO</h3>
-	       	<p class="pdatoscontacto">Direccion</p>
-	       	<p class="pdatoscontacto">Telefono</p>
-	       	<p class="pdatoscontacto">Email</p>
+	       	<p class="pdatoscontacto">Castelli 224, Ramos Mejía</p>
+	       	<p class="pdatoscontacto">Tel. 44829947</p>
+	       	<p class="pdatoscontacto">Email: medicinesalud@gmail.com</p>
 	       	<p class="pdatoscontacto">Redes</p>
 	       	</div>
        	
@@ -63,7 +72,8 @@
        <section class="mapacontactohtml">
    		<h2> UBICACION </h2>
 
-   		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d690.0356233674778!2d-58.562901646541256!3d-34.64507745072689!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc7df18bc4641%3A0x1eb875f5e28dd9b3!2sKarrimur%20Phone!5e0!3m2!1ses-419!2sar!4v1602453169771!5m2!1ses-419!2sar" width="800" height="350" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+   		<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1641.1840980590503!2d-58.5640554!3d-34.6454032!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc7e67b29efc3%3A0x286f17b6535ed871!2sCastelli%20224%2C%20B1704FCD%20Ramos%20Mej%C3%ADa%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1602614707323!5m2!1ses-419!2sar" width="800" height="350" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+
 
 
        </section>
@@ -90,6 +100,9 @@
 
 			<div class="cajafooter">
 			<p class="titulofooter"> REDES </p>
+                <img class="logoredes" src="img/instagram.png">
+                <img class="logoredes" src="img/twitter.png">
+                <img class="logoredes" src="img/facebook.png">
 			</div>
 		</footer>
 

@@ -3,7 +3,7 @@
 	
 	<head>
 		<meta charset="utf-8">
-		<title>Empresa de salud </title>
+		<title>Empresa de salud - Coronavirus</title>
 		<link rel="STYLESHEET" type="text/css" href="css/estiloseda.css">
 		<script src="https://kit.fontawesome.com/e29b713b16.js" crossorigin="anonymous"></script>
 	</head>
@@ -11,11 +11,20 @@
 	<body>
 		<header>
 			<img class="logoempresa" src="img/logo-medicine.png">
-			<input type="search" id="buscador" placeholder="Buscar aqui">
-			<a href=""><img class="lupa-buscar" src="img/lupa.png" alt="lupa"></a>
+            
+            <datalist id="buscador" class="buscador">
+                <option value="Coronavirus"></option>
+                <option value="Gripe"></option>
+                <option value="Diabetes"></option>
+                <option value="Gastritis"></option>
+                <option value="Neumonia"></option>
+            </datalist>
+            <input list="buscador" name="enfermedades" type="text" class="buscador" placeholder="Buscar aqui">
+			
+            <a href=""><img class="lupa-buscar" src="img/lupa.png" alt="lupa"></a>
 		</header>
-
-		<nav class="menu">
+        
+        <nav class="menu">
        <ul>
            <li><a href="index.html">HOME</a></li>
            <li><a href="enfermedades.html">ENFERMEDADES</a></li>
@@ -65,73 +74,94 @@
 	    
 		    <form action="http://www.google.com.ar" method="get">
 	        <label>Nombre y Apellido</label><br/>
-	        <input type="text" placeholder="Ingrese nombre y apellido" size="20" maxlength="30" requiered /> <br/>
+	        <input type="text" placeholder="Ingrese nombre y apellido" size="20" maxlength="30" requiered class="campos"/> <br/>
 
 	        <label>DNI</label><br/>
-	        <input type="number" placeholder="ingrese dni" size="20" maxlength="8" required /> <br/>
+	        <input type="number" placeholder="Ingrese dni" size="20" maxlength="8" required class="campos"/> <br/>
 
 	        <label>Telefono</label><br/>
-	        <input type="number" placeholder="Telefono" size="20" maxlength="12" required /> <br/>
+	        <input type="number" placeholder="Telefono" size="20" maxlength="12" required class="campos"/> <br/>
 
 	        <label>Ciudad</label><br/>
-	        <input type="text" placeholder="Ciudad" size="20" maxlength="30" requiered /> <br/>
+	        <input type="text" placeholder="Ciudad" size="20" maxlength="30" required class="campos"/> <br/>
 
 	        <label>Direccion</label><br/>
-	        <input type="text" placeholder="Direccion" size="20" maxlength="30" requiered /> <br/>
+	        <input type="text" placeholder="Direccion" size="20" maxlength="30" required class="campos"/> <br/>
 
-	        <label> Sexo</label><br/>
-
-	        <input type="radio" id="F" name="gender" value="Femenino">
+	        <label> Sexo</label>
+            <input type="radio" id="F" name="gender" value="Femenino"class="campos" >
 	        <label for="F">F</label>
-	        <input type="radio" id="M" name="gender" value="Masculino">
+	        <input type="radio" id="M" name="gender" value="Masculino" class="campos">
 	        <label for="M">M</label>
 	        <br/>
 
-	        <label> Has viajado al exterior de Argentina?</label><br/>
+	        <label> ¿Has viajado al exterior de Argentina?</label><br/>
 
-	        <input type="radio" id="Si" name="sino" value="Si">
-	        <label for="Si">Si</label>
-	        <input type="radio" id="No" name="sino" value="No">
-	        <label for="No">No</label>
-	        <br/>
+	        <input type="radio" id="SiViaje" name="sinoViaje" value="SiViaje" class="campos">
+	        <label for="SiViaje">Si</label>
+	        <input type="radio" id="NoViaje" name="sinoViaje" value="NoViaje" class="campos">
+	        <label for="NoViaje">No</label><br/>
+             
+            <label>Paises visitados:</label>    
+            <datalist id="buscadorPais" >
+                <option value="Afganistán"></option>
+                <option value="Albania"></option>
+                <option value="Alemania"></option>
+                <option value="Andorra"></option>
+                <option value="Angola"></option>
+                <option value="Antigua y Barbuda"></option>
+                <option value="Arabia Saudita"></option>
+                <option value="Argelia"></option>
+                <option value="Armenia"></option>
+                <option value="Australia"></option>
+                <option value="China"></option>
+                <option value="España"></option>
+                <option value="Estados Unidos"></option>
+                <option value="Italia"></option>
+                <option value="Japon"></option>
+                <option value="Reino Unido"></option>
+                <option value="Otro"></option>
+            </datalist>
+            <input class="buscadorPais" list="buscadorPais" name="paises" type="text" >
+            </label>
 
-	        <p> Por favor, indica sintomas que presentas</p>
+	        <p> Por favor, indica sintomas que presentas:</p>
 	        <label> Fiebre mayor a 38 grados</label>
-	        <input type="radio" id="Si" name="sino" value="Si">
-	        <label for="Si">Si</label>
-	        <input type="radio" id="No" name="sino" value="No">
-	        <label for="No">No</label>
+	        <input type="radio" id="SiFiebre" name="sinoFiebre" value="SiFiebre" class="campos">
+	        <label for="SiFiebre">Si</label>
+	        <input type="radio" id="NoFiebre" name="sinoFiebre" value="NoFiebre" class="campos">
+	        <label for="NoFiebre">No</label>
 	        <br/>
 
 	        <label> Dolor de cabeza</label>
-	        <input type="radio" id="Si" name="sino" value="Si">
-	        <label for="Si">Si</label>
-	        <input type="radio" id="No" name="sino" value="No">
-	        <label for="No">No</label>
+	        <input type="radio" id="SiCabeza" name="sinoCabeza" value="SiCabeza" class="campos">
+	        <label for="SiCabeza">Si</label>
+	        <input type="radio" id="NoCabeza" name="sinoCabeza" value="NoCabeza" class="campos">
+	        <label for="NoCabeza">No</label>
 	        <br/>
 
 	        <label> Tos</label>
-	        <input type="radio" id="Si" name="sino" value="Si">
-	        <label for="Si">Si</label>
-	        <input type="radio" id="No" name="sino" value="No">
-	        <label for="No">No</label>
+	        <input type="radio" id="SiTos" name="sinoTos" value="NoTos" class="campos">
+	        <label for="SiTos">Si</label>
+	        <input type="radio" id="NoTos" name="sinoTos" value="NoTos" class="campos">
+	        <label for="NoTos">No</label>
 	        <br/>
 
 	        <label> Dolor de garganta</label>
-	        <input type="radio" id="Si" name="sino" value="Si">
-	        <label for="Si">Si</label>
-	        <input type="radio" id="No" name="sino" value="No">
-	        <label for="No">No</label>
+	        <input type="radio" id="SiGarganta" name="sinoGarganta" value="SiGarganta" class="campos">
+	        <label for="SiGarganta">Si</label>
+	        <input type="radio" id="NoGarganta" name="sinoGarganta" value="NoGarganta" class="campos"> 
+	        <label for="NoGarganta">No</label>
 	        <br/>
 
 	        <label> Dificultad para Respirar</label>
-	        <input type="radio" id="Si" name="sino" value="Si">
-	        <label for="Si">Si</label>
-	        <input type="radio" id="No" name="sino" value="No">
-	        <label for="No">No</label>
+	        <input type="radio" id="SiRespirar" name="sinoRespirar" value="SiRespirar" class="campos">
+	        <label for="SiRespirar">Si</label>
+	        <input type="radio" id="NoRespirar" name="sinoRespirar" value="NoRespirar" class="campos">
+	        <label for="NoRespirar">No</label>
 	        <br/>
 
-	        <input type="submit" value="Enviar Formulario" />
+	        <input type="submit" value="Enviar Formulario" class="campos"/>
 
 	    	</form>
        
@@ -200,12 +230,15 @@
 			<p class="titulofooter"> MENU </p>
 			<a href="enfermedades.html"><p class="contfooter">Enfermedades </p></a>
 			<p class="contfooter">Vacunas      </p>
-			<a href="mapa.html"><p class="contfooter">Hospitales</p></a>
+			<a href="mapa.html"> <p class="contfooter">Hospitales</p></a>
 			<a href="contacto.html"><p class="contfooter">Contacto </p></a>
 			</div>
 
 			<div class="cajafooter">
 			<p class="titulofooter"> REDES </p>
+                <img class="logoredes" src="img/instagram.png">
+                <img class="logoredes" src="img/twitter.png">
+                <img class="logoredes" src="img/facebook.png">
 			</div>
 		</footer>
 

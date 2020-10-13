@@ -22,7 +22,7 @@ header
     
 }
 /* buscar y lupa */
-#buscador{
+.buscador{
     width: 600px;
     height: 30px;
     font-size: 15px;
@@ -33,6 +33,7 @@ header
     height: 30px;
     margin-right: 20px;
     margin-top: 10px;
+    margin-bottom: 2px;
     vertical-align: bottom;
 }
 /* fin buscar y lupa */
@@ -40,7 +41,7 @@ header
 .logoempresa
 {
     width: 80px;
-    margin-left: 30px;
+    margin-left: 50px;
 }
 
 /*NAV */
@@ -89,6 +90,7 @@ footer
 {  
     float:left;
     width: 33.33%;
+    text-align: center;
    
 }
 
@@ -97,13 +99,21 @@ footer
     color:white; 
     font-weight: bold;
     margin-bottom: 5px;
-    text-align: center;
 }
 
 .contfooter
 {
     color: white;
-    text-align: center;
+}
+
+.logoredes
+{
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+    margin-top: 10px;
+    margin-left: 20px;
+    display: inline-block;
 }
 
 
@@ -113,12 +123,6 @@ footer
 {   
 }
 
-.cajainicio
-{
-    margin-top: 30px;
-    float:left;
-    width: 33.33%;
-}
 /* slider */
 .container{
     margin:auto;
@@ -183,6 +187,14 @@ border-radius: 100%;
 }
 /* fin slider */
 
+.cajainicio
+{
+    margin-top: 30px;
+    float:left;
+    width: 33.33%;
+    text-align: center;
+}
+
 .enfermedades
 {
     color: white;
@@ -214,36 +226,27 @@ border-radius: 100%;
     padding: 10px;
     margin-right: auto;
     margin-left: auto;
-    width: 80px;
+    width: 200px;
 }
 
 .icono1
 {
-
     font-size: 50px;
-    padding-left: 80px;
-    margin-right: 20px;
-    margin-left: 80px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+
 }
 
 .icono2
 {
     font-size: 50px;
-    padding-left: 80px;
-    margin-right: 20px;
-    margin-left: 80px;
-    margin-bottom: 10px;
-    
+    margin-bottom: 20px;
+
 }
 
 .icono3
 {
-    font-size: 50px;;
-    padding-left: 80px;
-    margin-right: 20px;
-    margin-left: 80px;
-    margin-bottom: 10px;
+    font-size: 50px;
+    margin-bottom: 20px;
     
 }
 
@@ -270,21 +273,25 @@ margin-bottom: 30px;
 
 .cajaenfermedad
 {
-    margin-left: 200px;
-    margin-bottom: 30px;    
+    margin-bottom: 30px;
+    text-align: center;
+    background: #f0f0f0;
+    border-radius: 10px;
+    padding: 20px;
 }
 .cajaenfermedad2
 {
     float:right;
-    padding-right: 20px;
+    padding-right: 100px;
     margin-bottom: 30px;
     width: 650px;
+    text-align: left;
 }
 
 .imgenfermedadbox
 {
-    height: 120px;
-    width: 180px;
+    height: 200px;
+    width: 300px;
     border-radius: 10px;
 }
 .desenfermedad
@@ -298,6 +305,7 @@ margin-bottom: 30px;
     background-color: #636363;
     border-radius: 5px;
     margin-right: 500px;
+    padding: 5px;
 }
     
 
@@ -351,9 +359,21 @@ height: 600px;
     
 }
 
+.campos
+{
+    margin-bottom: 10px;
+    border-radius: 5px;
+
+}
+
 .leyendsint
 {
     margin-bottom: 20px;
+}
+
+.buscadorpais
+{
+    margin-right: 300px;
 }
 
 .divsintomas
@@ -443,4 +463,16 @@ height: 600px;
 {
     margin-bottom: 20px;
     text-align: center;
+}
+
+.contactoforminput
+{
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+.consultaform
+{
+    height: 50px;
+    width: 250px;
+    border-radius: 5px;
 }

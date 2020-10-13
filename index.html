@@ -3,7 +3,7 @@
 	
 	<head>
 		<meta charset="utf-8">
-		<title>Empresa de salud </title>
+		<title>Empresa de salud - Home</title>
 		<link rel="STYLESHEET" type="text/css" href="css/estiloseda.css">
 		<script src="https://kit.fontawesome.com/e29b713b16.js" crossorigin="anonymous"></script>
 	</head>
@@ -11,9 +11,28 @@
 	<body>
 		<header>
 			<img class="logoempresa" src="img/logo-medicine.png">
-			<input type="search" id="buscador" placeholder="Buscar aqui">
-			<a href=""><img class="lupa-buscar" src="img/lupa.png" alt="lupa"></a>
+            
+            <datalist id="buscador" class="buscador">
+                <option value="Coronavirus"></option>
+                <option value="Gripe"></option>
+                <option value="Diabetes"></option>
+                <option value="Gastritis"></option>
+                <option value="Neumonia"></option>
+            </datalist>
+            <input list="buscador" name="enfermedades" type="text" class="buscador" placeholder="Buscar aqui">
+			
+            <a href=""><img class="lupa-buscar" src="img/lupa.png" alt="lupa"></a>
 		</header>
+        
+        <nav class="menu">
+       <ul>
+           <li><a href="index.html">HOME</a></li>
+           <li><a href="enfermedades.html">ENFERMEDADES</a></li>
+           <li><a href="#">VACUNACION</a></li>
+           <li><a href="mapa.html">HOSPITALES</a></li>
+           <li><a href="contacto.html">CONTACTO</a></li>          
+       </ul>
+   		</nav>
 
 		<!-- slider -->
 		<div class="container">
@@ -49,7 +68,7 @@
 		<main>
 		
 		<section class="secmain">
-			<h2> TITULO  </h2>
+			<h2> MEDICINE  </h2>
 
 			<div class="cajainicio">
 			<a href="enfermedades.html"><i class="icono1 fas fa-disease"></i></a>	
@@ -97,6 +116,9 @@
 
 			<div class="cajafooter">
 			<p class="titulofooter"> REDES </p>
+                <img class="logoredes" src="img/instagram.png">
+                <img class="logoredes" src="img/twitter.png">
+                <img class="logoredes" src="img/facebook.png">
 			</div>
 		</footer>
 
