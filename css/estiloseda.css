@@ -271,29 +271,39 @@ margin-bottom: 30px;
 
 /* Para enfermedades.html*/
 
-.cajaenfermedad
+.boxpadreenf
 {
-    margin-bottom: 30px;
-    text-align: center;
+    height:250px;
+    width: 1100px;
     background: #f0f0f0;
     border-radius: 10px;
-    padding: 20px;
-}
-.cajaenfermedad2
-{
-    float:right;
-    padding-right: 100px;
     margin-bottom: 30px;
-    width: 650px;
-    text-align: left;
 }
 
+.cajaenfermedad
+{
+    width: 300px;
+    padding: 20px;
+    float:left;
+}
 .imgenfermedadbox
 {
+    text-align: left;
     height: 200px;
     width: 300px;
     border-radius: 10px;
 }
+.cajaenfermedad2
+{
+    padding-top: 20px;
+    padding-right: 100px;
+    margin-bottom: 30px;
+    width: 600px;
+    float:left;
+    
+    
+}
+
 .desenfermedad
 {
     text-align: left;

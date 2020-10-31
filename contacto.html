@@ -5,6 +5,7 @@
 		<meta charset="utf-8">
 		<title>Empresa de salud - Contacto</title>
 		<link rel="STYLESHEET" type="text/css" href="css/estiloseda.css">
+		<script type="text/javascript" src="js/edajs.js"></script>
 		<script src="https://kit.fontawesome.com/e29b713b16.js" crossorigin="anonymous"></script>
 	</head>
 
@@ -42,16 +43,21 @@
 
 	       	<div class="formcontacto">
 	       	<h3 class="h3contacto">CONTACTO</h3>
-	       	<form action="http://www.google.com.ar" method="get">
+	       	<form action="http://www.google.com.ar" id="form" name="form" method="get">
 	        	<label>Nombre y Apellido</label><br/>
-	        	<input class= "contactoforminput" type="text" placeholder="Nombre y Apellido" size="20" maxlength="30" required /><br>
+	        	<input name="nombre" class= "contactoforminput" id="nombre" type="text" placeholder="Nombre y Apellido" size="20" maxlength="30" required /><br>
 	        	<label>Email</label><br/>
-	        	<input class= "contactoforminput" type="text" placeholder="Email" size="20" maxlength="30" required /> <br/>
+	        	<input name="email" class= "contactoforminput" name="email" type="text" placeholder="Email" size="20" maxlength="30" required /> <br/>
 	        	<label>Telefono</label><br/>
-	        	<input class= "contactoforminput" type="number" placeholder="Telefono" size="20" maxlength="30" /> <br/>
+	        	<input name="telefono" class= "contactoforminput" id="telefono" type="number" placeholder="Telefono" size="20" maxlength="30" /> <br/>
 	        	<label>Consulta</label><br/>
-	        	<textarea class="consultaform" placeholder="Escriba su consulta" required></textarea>
-	        	<input type="submit" value="Enviar" />
+	        	
+	        	<textarea name="consultaform" id="consultaform" class="consultaform" placeholder="Escriba su consulta" required onkeyup="contarcarac();" ></textarea>
+	        	<p id="caracteresRestantes">1000 caracteres restantes</p>
+
+	        	<input name="Bot&oacute;n" type="button" onclick="valida_envia()" id="Enviar" value="Enviar" / />
+	        	
+	        	<!-- <input type="submit" value="Enviar" /> -->
 
 	        </form>
 
