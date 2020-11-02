@@ -5,6 +5,7 @@
 		<meta charset="utf-8">
 		<title>Empresa de salud - Coronavirus</title>
 		<link rel="STYLESHEET" type="text/css" href="css/estiloseda.css">
+    <script type="text/javascript" src="js/edajs.js"></script>
 		<script src="https://kit.fontawesome.com/e29b713b16.js" crossorigin="anonymous"></script>
 	</head>
 
@@ -72,15 +73,15 @@
 
        <div class="boxform2"> 
 	    
-		    <form action="http://www.google.com.ar" method="get">
+		    <form action="http://www.google.com.ar" id="form" name="form" method="get">
 	        <label>Nombre y Apellido</label><br/>
-	        <input type="text" placeholder="Ingrese nombre y apellido" size="20" maxlength="30" requiered class="campos"/> <br/>
+	        <input name="nombre" id="nombre" type="text" placeholder="Ingrese nombre y apellido" size="20" maxlength="30" requiered class="campos"/> <br/>
 
 	        <label>DNI</label><br/>
-	        <input type="number" placeholder="Ingrese dni" size="20" maxlength="8" required class="campos"/> <br/>
+	        <input name="dni" id="dni" type="number" placeholder="Ingrese dni" size="20" maxlength="8" required class="campos"/> <br/>
 
 	        <label>Telefono</label><br/>
-	        <input type="number" placeholder="Telefono" size="20" maxlength="12" required class="campos"/> <br/>
+	        <input name="telefono" id="telefono" type="number" placeholder="Telefono" size="20" maxlength="12" required class="campos"/> <br/>
 
 	        <label>Ciudad</label><br/>
 	        <input type="text" placeholder="Ciudad" size="20" maxlength="30" required class="campos"/> <br/>
@@ -141,7 +142,7 @@
 	        <br/>
 
 	        <label> Tos</label>
-	        <input type="radio" id="SiTos" name="sinoTos" value="NoTos" class="campos">
+	        <input type="radio" id="SiTos" name="sinoTos" value="SiTos" class="campos">
 	        <label for="SiTos">Si</label>
 	        <input type="radio" id="NoTos" name="sinoTos" value="NoTos" class="campos">
 	        <label for="NoTos">No</label>
@@ -161,7 +162,9 @@
 	        <label for="NoRespirar">No</label>
 	        <br/>
 
-	        <input type="submit" value="Enviar Formulario" class="campos"/>
+          <input name="Bot&oacute;n" type="button" onclick="valida_enviacorona()" id="Enviar" value="Enviar" / />
+
+	        <!-- <input type="submit" value="Enviar Formulario" class="campos"/> -->
 
 	    	</form>
        

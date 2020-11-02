@@ -57,3 +57,77 @@ function valida_envia()
 	//Si todos los campos han validado correctamente, se envía el formulario
 	document.form.submit();
 }
+
+function valida_enviacorona()
+{
+	//Definimos los caracteres permitidos en una dirección de correo electrónico
+	var regexp = /^[0-9a-zA-Z._.-]+\@[0-9a-zA-Z._.-]+\.[0-9a-zA-Z]+$/;
+
+	//Validamos un campo o área de texto, por ejemplo el campo nombre
+	if (document.form.nombre.value.length==0)
+	{
+		alert("Tiene que escribir su nombre")
+		document.form.nombre.focus()
+		return 0;
+	}
+
+
+	//Validamos un campo de texto como numérico, por ejemplo el campo teléfono de 9 dígitos
+	valor = document.form.telefono.value;
+	if( !(/^\d{8}$/.test(valor)) ) 
+	{
+		alert("Tiene que escribir un telefono de 8 digitos");
+		document.form.telefono.focus();
+		return 0;
+	}
+
+	//Validamos un campo dni
+	valor = document.form.dni.value;
+	if( !(/^\d{8}$/.test(valor)) ) 
+	{
+		alert("Debe escribir un DNI");
+		document.form.dni.focus();
+		return 0;
+	}
+
+	//validar radio
+	//var validarRadio=function(){
+	if (form.sinoFiebre[0].checked == true || form.sinoFiebre[1].checked == true ){
+	}else{
+		alert("Completa el campo fiebre");
+		return false;
+	}
+
+	if (form.sinoCabeza[0].checked == true || form.sinoCabeza[1].checked == true ){
+	}else{
+		alert("Responde si has tenido dolor de cabeza");
+		return false;
+	}
+
+	if (form.sinoTos[0].checked == true || form.sinoTos[1].checked == true ){
+	}else{
+		alert("Responde si has tenido tos");
+		return false;
+	}
+
+	if (form.sinoGarganta[0].checked == true || form.sinoGarganta[1].checked == true ){
+	}else{
+		alert("Responde si tienes dolor de garganta");
+		return false;
+	}
+
+	if (form.sinoRespirar[0].checked == true || form.sinoRespirar[1].checked == true ){
+	}else{
+		alert("Responde si tienes dificultad para respirar");
+		return false;
+	}
+
+
+
+
+
+	
+
+	//Si todos los campos han validado correctamente, se envía el formulario
+	document.form.submit();
+}
