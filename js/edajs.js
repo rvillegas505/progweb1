@@ -15,6 +15,7 @@ function valida_envia()
 {
 	//Definimos los caracteres permitidos en una dirección de correo electrónico
 	var regexp = /^[0-9a-zA-Z._.-]+\@[0-9a-zA-Z._.-]+\.[0-9a-zA-Z]+$/;
+	var regtel=/^[0-9]{4}[-]{0,1}[0-9]{4}$/;
 
 	//Validamos un campo o área de texto, por ejemplo el campo nombre
 	if (document.form.nombre.value.length==0)
@@ -27,11 +28,15 @@ function valida_envia()
 
 	//Validamos un campo de texto como numérico, por ejemplo el campo teléfono de 9 dígitos
 	valor = document.form.telefono.value;
-	if( !(/^\d{8}$/.test(valor)) ) 
+	if ((regtel.test(document.form.telefono.value) == 0) || (document.form.telefono.value.length = 0) ) 
 	{
 		alert("Tiene que escribir un telefono de 8 digitos");
 		document.form.telefono.focus();
 		return 0;
+	}
+	else 
+	{
+		var c_telefono=true;
 	}
 
 	//Validamos un campo de texto como email
@@ -122,11 +127,6 @@ function valida_enviacorona()
 		return false;
 	}
 
-
-
-
-
-	
 
 	//Si todos los campos han validado correctamente, se envía el formulario
 	document.form.submit();
