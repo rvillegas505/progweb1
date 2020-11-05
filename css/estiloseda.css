@@ -373,9 +373,19 @@ height: 600px;
 
 .campos
 {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     border-radius: 5px;
+}
 
+#direccion
+{
+	display: none;
+}
+
+#buscadorPais
+{
+	display: none;
+	margin-bottom: 10px;
 }
 
 .leyendsint

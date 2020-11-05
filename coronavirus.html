@@ -86,8 +86,9 @@
 	        <label>Ciudad</label><br/>
 	        <input type="text" placeholder="Ciudad" size="20" maxlength="30" required class="campos"/> <br/>
 
-	        <label>Direccion</label><br/>
+	        <div name="direccion" id="direccion" ><label>Direccion</label><br/>
 	        <input type="text" placeholder="Direccion" size="20" maxlength="30" required class="campos"/> <br/>
+			</div>
 
 	        <label> Sexo</label>
             <input type="radio" id="F" name="gender" value="Femenino"class="campos" >
@@ -98,35 +99,37 @@
 
 	        <label> ¿Has viajado al exterior de Argentina?</label><br/>
 
-	        <input type="radio" id="SiViaje" name="sinoViaje" value="SiViaje" class="campos">
+	        <input type="radio" id="SiViaje" name="sinoViaje" value="SiViaje" class="campos" onClick="mostrarPaises();">
 	        <label for="SiViaje">Si</label>
-	        <input type="radio" id="NoViaje" name="sinoViaje" value="NoViaje" class="campos">
-	        <label for="NoViaje">No</label><br/>
-             
-            <label>Paises visitados:</label>    
-            <datalist id="buscadorPais" >
-                <option value="Afganistán"></option>
-                <option value="Albania"></option>
-                <option value="Alemania"></option>
-                <option value="Andorra"></option>
-                <option value="Angola"></option>
-                <option value="Antigua y Barbuda"></option>
-                <option value="Arabia Saudita"></option>
-                <option value="Argelia"></option>
-                <option value="Armenia"></option>
-                <option value="Australia"></option>
-                <option value="China"></option>
-                <option value="España"></option>
-                <option value="Estados Unidos"></option>
-                <option value="Italia"></option>
-                <option value="Japon"></option>
-                <option value="Reino Unido"></option>
-                <option value="Otro"></option>
-            </datalist>
-            <input class="buscadorPais" list="buscadorPais" name="paises" type="text" >
-            </label>
+	        <input type="radio" id="NoViaje" name="sinoViaje" value="NoViaje" class="campos" onClick="mostrarPaises();">
+			<label for="NoViaje">No</label><br/>
+            
+      <!-- <label id="buscadorPaisT">Paises visitados: </label>  -->
+           <!--  <input class="buscadorPais" list="buscadorPais" name="paises" type="text" >--> 
+            <select id="buscadorPais" >
+                <option value=""> Pais Visitado:</option>
+                <option value="Afganistán"> Afganistán</option>
+                <option value="Albania">Albania</option>
+                <option value="Alemania">Alemania</option>
+                <option value="Andorra">Andorra</option>
+                <option value="Angola">Angola</option>
+                <option value="Antigua y Barbuda">Antigua y Barbuda</option>
+                <option value="Arabia Saudita">Arabia Saudita</option>
+                <option value="Argelia">Argelia</option>
+                <option value="Armenia">Armenia</option>
+                <option value="Australia">Australia</option>
+                <option value="China">China</option>
+                <option value="España">España</option>
+                <option value="Estados Unidos">Estados Unidos</option>
+                <option value="Italia">Italia</option>
+                <option value="Japon">Japon</option>
+                <option value="Reino Unido">Reino Unido</option>
+                <option value="Otro">Otro</option>
+            </select>
+           <!-- <input class="buscadorPais" list="buscadorPais" name="paises" type="text" > -->
+		
 
-	        <p> Por favor, indica sintomas que presentas:</p>
+	        <br/><p> Por favor, indica sintomas que presentas:</p><br/>
 	        <label> Fiebre mayor a 38 grados</label>
 	        <input type="radio" id="SiFiebre" name="sinoFiebre" value="SiFiebre" class="campos">
 	        <label for="SiFiebre">Si</label>
@@ -151,18 +154,18 @@
 	        <label> Dolor de garganta</label>
 	        <input type="radio" id="SiGarganta" name="sinoGarganta" value="SiGarganta" class="campos">
 	        <label for="SiGarganta">Si</label>
-	        <input type="radio" id="NoGarganta" name="sinoGarganta" value="NoGarganta" class="campos"> 
+	        <input type="radio" id="NoGarganta" name="sinoGarganta" value="NoGarganta" class="campos"  onClick="alertSintomas();"> 
 	        <label for="NoGarganta">No</label>
 	        <br/>
 
 	        <label> Dificultad para Respirar</label>
-	        <input type="radio" id="SiRespirar" name="sinoRespirar" value="SiRespirar" class="campos">
+	        <input type="radio" id="SiRespirar" name="sinoRespirar" value="SiRespirar" class="campos" onClick="mostrarDireccion();">
 	        <label for="SiRespirar">Si</label>
-	        <input type="radio" id="NoRespirar" name="sinoRespirar" value="NoRespirar" class="campos">
+	        <input type="radio" id="NoRespirar" name="sinoRespirar" value="NoRespirar" class="campos" onClick="mostrarDireccion();">
 	        <label for="NoRespirar">No</label>
 	        <br/>
 
-          <input name="Bot&oacute;n" type="button" onclick="valida_enviacorona()" id="Enviar" value="Enviar" / />
+          <input name="Bot&oacute;n" type="button" onclick="valida_enviacorona()" id="Enviar" value="Enviar" />
 
 	        <!-- <input type="submit" value="Enviar Formulario" class="campos"/> -->
 
@@ -224,7 +227,7 @@
 		<footer>
 			<div class="cajafooter">
 			<p class="titulofooter"> GRUPO </p>
-			<p class="contfooter">Bianca Della Vechia </p>
+			<p class="contfooter">Bianca Della Vecchia </p>
 			<p class="contfooter">Sergio Garnica</p>
 			<p class="contfooter">Rodrigo Villegas</p>
 			</div>
