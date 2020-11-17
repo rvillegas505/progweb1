@@ -5,7 +5,20 @@
 		<meta charset="utf-8">
 		<title>Empresa de salud - Home</title>
 		<link rel="STYLESHEET" type="text/css" href="css/estiloseda.css">
+		
 		<script src="https://kit.fontawesome.com/e29b713b16.js" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="css/flexslider.css"/>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+        <script src="js/jquery.flexslider-min.js"></script>
+        <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+        <link rel="stylesheet" href="css/demo.css"/> 
+
+        <script type="text/javascript">
+            $(window).load(function() {
+                $('.flexslider').flexslider();
+            });
+        </script>
 	</head>
 
 	<body>
@@ -25,35 +38,31 @@
 		</header>
        
 		<!-- slider -->
-		<div class="container">
+		
   
-			<ul class="slider">
-			  <li id="slide1">
-				<img src="img/maxresdefault.jpg"/>
-			  </li>
-			  <li id="slide2">
-				<img src="img/hisopado.jpg"/>
-			  </li>
-			  <li id="slide3">
-				
-				<img src="img/protocolo.jpg"/>
-			  </li>
-			</ul>
+			<section class="contenedor">
+            <article class="flexslider">
+                <ul class="slides">
+                    <li>
+                        <img src="img/hisopado800.jpg" />
+                        
+                    </li>
+                    <li>
+                        <img src="img/protocolo800.jpg" />
+                     <!-- no usado por ahora  <p class="flex-caption">Ejemplo de texto2</p>-->
+                    </li>
+                    <li>
+                        <img src="img/maxresdefault800.jpg" />
+                        
+                    </li>
+                </ul>
+            </article>
+        </section>
 			
-			<ul class="menuslider">
-			  <li>
-				<a href="#slide1">1</a>
-			  </li>
-			  <li>
-				<a href="#slide2">2</a>
-			  </li>
-			   <li>
-				<a href="#slide3">3</a>
-			  </li>
-			</ul>
-			
-		  </div>
+			<!-- los archivos de slider son en css: demo.css y flexslider.css 
+			En js: jquery.flexslider y jquery.flexslider-min  -->
 		  <!-- fin slider -->
+
 
 		<main>
 		
