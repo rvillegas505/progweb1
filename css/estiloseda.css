@@ -23,18 +23,26 @@ header
 }
 /* buscar y lupa */
 .buscador{
-    width: 600px;
-    height: 30px;
+  /*  width: 600px;*/
+  width: 30%;
+   /* height: 30px;*/
+   height: 30px;
     font-size: 15px;
-    margin-left: 250px;
+   /*margin-left: 150px;*/
+    margin-left:23%;
+    margin-right:auto;
+
 }
 .lupa-buscar{
-    width: 30px;
+   /* width: 30px;*/
+   width: 3.5%;
     height: 30px;
-    margin-right: 20px;
+   /* margin-right: 20px;*/
     margin-top: 10px;
     margin-bottom: 2px;
     vertical-align: bottom;
+    margin-left:auto;
+    margin-right:auto;
 }
 /* fin buscar y lupa */
 
@@ -121,11 +129,12 @@ footer
 
 .secmain
 {   
+    margin-bottom:10px;
 }
 
-/* slider */
-
-/* fin slider */
+.titulomedicine{
+    margin-top:30px;
+}
 
 .cajainicio
 {
@@ -190,15 +199,21 @@ footer
     
 }
 
-.sintomas
+.sintomasindexdiv
 {
+
 margin-bottom: 30px;
+
+
 }
-.sintomasimg
+.sintomasimg /*se agregaron algunas cosas en la imagen para responsive*/
 {
-    display: block;
+   /* display: block;*/
+   width: 80%;
     margin-left:auto;
     margin-right:auto;
+    display: flex;
+    flex-direction: column;
 }
 
 /*Para mapa de mapa.html*/
