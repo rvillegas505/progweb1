@@ -6,6 +6,10 @@
 		<title>Empresa de salud - Hospitales</title>
 		<link rel="STYLESHEET" type="text/css" href="css/estiloseda.css">
 		<script src="https://kit.fontawesome.com/e29b713b16.js" crossorigin="anonymous"></script>
+
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.pack.js"></script>
+	<script type="text/javascript" src="js/modal.js"></script>
+
 	</head>
 
 	<body>
@@ -40,6 +44,33 @@
        <section>
        	
        	<h2> MAPA DE HOSPITALES DISPONIBLES </h2>
+       	<div class="listadohospitalesmapa">
+			<p class="nombreshospitalestitulo"> Hospitales con terapia intensiva:</p>
+			<a href="#dialog" name="modal"><p class="nombreshospitales"> Hospital Durand</p>
+			<p class="nombreshospitales"> Sanatorio San Justo</p>
+			<p class="nombreshospitales"> Hospital de Morón</p></a>
+         
+		</div>
+			
+			<div id="boxes">
+
+				<div id="dialog" class="window">
+					<p class="nombreenpopup">Hospital Durand</p>
+					<p class="descenpopup">Av. Díaz Vélez 5044, CABA</p>
+
+					<p class="nombreenpopup">Sanatorio San Justo</p>
+					<p class="descenpopup">Av. Juan Manuel de Rosas 3265, San Justo</p>
+
+					<p class="nombreenpopup">Hospital de Morón</p>
+					<p class="descenpopup">Rodolfo Monte 848, Morón</p>
+					<a href="#"class="close"/>Cerrar</a>
+				</div>
+				
+		 
+				<!-- Mask to cover the whole screen -->
+				<div id="mask"></div>
+		
+			</div>
 
        </section>
 
